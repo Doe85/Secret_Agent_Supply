@@ -1,0 +1,11 @@
+* {
+  font-family: helvetica, sans-serif;
+}
+
+html {
+  font-size: 18px;
+}
+
+#main {
+  background-image: url(./resources/moto.jpeg);
+}
