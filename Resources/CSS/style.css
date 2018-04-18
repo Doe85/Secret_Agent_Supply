@@ -1,11 +1,74 @@
+/* Global Rules */
 * {
   font-family: helvetica, sans-serif;
+  color: blue;
 }
 
 html {
   font-size: 18px;
 }
 
+.flex-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/* Entire Page */
+
+#page {
+  flex-direction: column;
+}
+
+/* Section - Header */
+
+header {
+  background-color: black;
+}
+
+header img {
+  height: 1.5rem;
+  width: auto;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+header h3 {
+  font-size: 1rem;
+  margin-top: 0.66rem;
+  margin-bottom: 0.66rem;
+}
+
+header #headerlogo {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Section - Main */
+
 #main {
-  background-image: url(./resources/moto.jpeg);
+  background-image: url(../moto.jpeg);
+  width: auto;
+  height: 25rem;
+  background-size: cover;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main_text {
+  padding: 2em 3em;
+  width: 20rem;
+  height: auto;
+  background-color: black;
+  margin-top: 9rem;
+}
+
+#main h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#main h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
 }
