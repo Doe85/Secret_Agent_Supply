@@ -1,22 +1,23 @@
 /* Global Rules */
 * {
   font-family: helvetica, sans-serif;
-  color: blue;
+  color: white;
 }
 
 html {
   font-size: 18px;
 }
 
-.flex-container {
-  flex-wrap: wrap;
-  display: flex;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /* Entire Page */
 
 #page {
   flex-direction: column;
+  display: flex;
 }
 
 /* Section - Header */
@@ -38,9 +39,10 @@ header h3 {
   margin-bottom: 0.66rem;
 }
 
-header #headerlogo {
-  justify-content: flex-start;
+#headerlogo {
   align-items: center;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 /* Section - Main */
@@ -51,7 +53,6 @@ header #headerlogo {
   height: 25rem;
   background-size: cover;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .main_text {
@@ -71,4 +72,100 @@ header #headerlogo {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 0.25rem;
+}
+
+/* Section - Navigation */
+
+#nav {
+  background-color: firebrick;
+}
+
+#navlist {
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/* Products & Locations */
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products img {
+  height: 9rem;
+  max-width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-size: contain;
+}
+
+#pen,
+#watch,
+#glasses {
+  border: 4px solid black;
+  margin-top: 3rem;
+  width: 30%;
+}
+
+#pen img,
+#watch img,
+#glasses img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#pen h3,
+#watch h3,
+#glasses h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#location {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+}
+
+#locationheader,
+#hoursheader {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+}
+
+#geo,
+#hours {
+  width: 35%;
+}
+
+/* Section - Footer */
+
+footer {
+  background-color: black;
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 5rem;
 }
